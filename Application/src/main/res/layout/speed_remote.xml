@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context="com.example.android.bluetoothlegatt.SpeedRemoteFragment">
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/channel_label"
+      android:gravity="center"
+      android:textAlignment="center"
+      android:textSize="24sp" />
+
+  <RadioGroup
+      android:id="@+id/channel_buttons"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginLeft="40sp"
+      android:layout_marginRight="40sp"
+      android:layout_weight="1"
+      android:checkedButton="@+id/channel_1_button"
+      android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/channel_1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/channel_1" />
+
+    <RadioButton
+        android:id="@+id/channel_2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/channel_2" />
+
+    <RadioButton
+        android:id="@+id/channel_3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/channel_3" />
+
+    <RadioButton
+        android:id="@+id/channel_4_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/channel_4" />
+
+  </RadioGroup>
+
+  <GridLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center"
+      android:columnCount="2">
+
+    <Button
+        android:id="@+id/speed_left_inc_button"
+        android:layout_margin="10sp"
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:textSize="30sp"
+        android:text="@string/increase_button" />
+
+    <Button
+        android:id="@+id/speed_right_inc_button"
+        android:layout_margin="10sp"
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:textSize="30sp"
+        android:text="@string/increase_button" />
+
+    <Button
+        android:id="@+id/speed_left_dec_button"
+        android:layout_margin="10sp"
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:textSize="30sp"
+        android:text="@string/decrease_button" />
+
+    <Button
+        android:id="@+id/speed_right_dec_button"
+        android:layout_margin="10sp"
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:textSize="30sp"
+        android:text="@string/decrease_button" />
+
+    <Button
+        android:id="@+id/speed_left_button"
+        android:layout_margin="10sp"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:textSize="20sp"
+        android:text="@string/left_button" />
+
+    <Button
+        android:id="@+id/speed_right_button"
+        android:layout_margin="10sp"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:textSize="20sp"
+        android:text="@string/right_button" />
+  </GridLayout>
+
+  <Button
+      android:id="@+id/speed_both_button"
+      android:layout_margin="10sp"
+      android:layout_width="100sp"
+      android:layout_height="60sp"
+      android:layout_gravity="center"
+      android:textSize="20sp"
+      android:text="@string/both_button" />
+
+</LinearLayout>

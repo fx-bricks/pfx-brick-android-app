@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.android.bluetoothlegatt.JoystickRemoteFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/channel_label"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/channel_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_weight="1"
+        android:checkedButton="@+id/channel_1_button"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/channel_1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/channel_1" />
+
+        <RadioButton
+            android:id="@+id/channel_2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/channel_2" />
+
+        <RadioButton
+            android:id="@+id/channel_3_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/channel_3" />
+
+        <RadioButton
+            android:id="@+id/channel_4_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/channel_4" />
+
+    </RadioGroup>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/joystick_left_up_button"
+            android:layout_width="100sp"
+            android:layout_height="90sp"
+            android:layout_margin="10sp"
+            android:textSize="20sp"
+            android:text="@string/forward_button" />
+
+        <Button
+            android:id="@+id/joystick_right_up_button"
+            android:layout_margin="10sp"
+            android:layout_width="100sp"
+            android:layout_height="90sp"
+            android:textSize="20sp"
+            android:text="@string/forward_button" />
+
+        <Button
+            android:id="@+id/joystick_left_down_button"
+            android:layout_margin="10sp"
+            android:layout_width="100sp"
+            android:layout_height="90sp"
+            android:textSize="20sp"
+            android:text="@string/reverse_button" />
+
+        <Button
+            android:id="@+id/joystick_right_down_button"
+            android:layout_margin="10sp"
+            android:layout_width="100sp"
+            android:layout_height="90sp"
+            android:textSize="20sp"
+            android:text="@string/reverse_button" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/joystick_beacon_button"
+        android:layout_margin="15sp"
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:text="@string/beacon_button" />
+
+
+</LinearLayout>

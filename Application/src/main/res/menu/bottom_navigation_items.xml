@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_item1"
+        android:icon="@drawable/icon_brick"
+        android:title="@string/device_info"/>
+    <item
+        android:id="@+id/action_item2"
+        android:icon="@drawable/speed_remote"
+        android:title="@string/speed_remote"/>
+    <item
+        android:id="@+id/action_item3"
+        android:icon="@drawable/joystick_remote"
+        android:title="@string/joystick_remote"/>
+</menu>
